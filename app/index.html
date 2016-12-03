@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width initial-scale=1">
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="swiper/swiper-3.4.0.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
+		<script src="bootstrap/jquery-1.12.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="zepto/zepto.js" type="text/javascript" charset="utf-8"></script>
+		<script src="zepto/touch.js" type="text/javascript" charset="utf-8"></script>
+		<script src="swiper/swiper-3.4.0.min.js" ></script>
+		<script src="bootstrap/bootstrap.min.js" ></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<header>
+			<a href="#"><div class="logo"><img src="img/logo.PNG"/></div></a>
+			<a class="seach" href="#"><span class="iconfont icon-chaxun"></span></a>
+		</header>
+		<!--底部-->
+		<footer>
+			<a href="index.html"><i class="iconfont icon-shouye-copy-copy-copy"></i><span>首页</span></a>
+			<a href="#"><i class="iconfont icon-iconfont"></i><span>积分</span></a>
+			<a href="html/classify.html"><i class="iconfont icon-fenlei"></i><span>分类</span></a>
+			<a href="html/car.html"><i class="iconfont icon-gouwuche"></i><span>购物车</span></a>
+			<a href="html/personal.html"><i class="iconfont icon-geren"></i><span>个人中心</span></a>
+		</footer>
+		<!--撑开与头部的间隔-->
+		<div class="inde_top"></div>
+		<!--轮播图-->
+		<div class="lbt">
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide"><a href="#"><img src="img/1.jpg"/></a></div>
+			        <div class="swiper-slide"><a href="#"><img src="img/2.jpg"/></a></div>
+			        <div class="swiper-slide"><a href="#"><img src="img/3.jpg"/></a></div>
+			        <div class="swiper-slide"><a href="#"><img src="img/4.jpg"/></a></div>
+			    </div>
+			    <!-- 如果需要分页器 -->
+			    <div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<!--导航-->
+		<nav class="index_list">
+			<div class="container-fluid">
+				  <div class="col-xs-3 "><a href="#"><img src="img/01.PNG"/><span>保健</span></a></div>
+				  <div class="col-xs-3 "><a href="#"><img src="img/02.PNG"/><span>服饰</span></a></div>
+				  <div class="col-xs-3 "><a href="#"><img src="img/03.PNG"/><span>家居</span></a></div>
+				  <div class="col-xs-3 "><a href="#"><img src="img/04.PNG"/><span>母婴</span></a></div>
+				  <div class="col-xs-3 "><a href="#"><img src="img/05.PNG"/><span>美妆</span></a></div>
+				  <div class="col-xs-3 "><a href="#"><img src="img/06.PNG"/><span>饰品</span></a></div>
+				  <div class="col-xs-3 "><a href="#"><img src="img/07.PNG"/><span>数码</span></a></div>
+				  <div class="col-xs-3 "><a href="#"><img src="img/08.PNG"/><span>食品</span></a></div>
+			</div>
+		</nav>
+		<!--分类导航-->
+		<div class="category">
+			<div class="col-xs-6 item"><a href="#"><img src="img/index45.jpg"/></a></div>
+			<div class="col-xs-6 item"><a href="#"><img src="img/index46.jpg"/></a></div>
+		</div>
+		<div class="proimg"><a href="#"><img src="img/index44.jpg"/></a></div>
+		<!--商品展示-->
+		<div class="produlist">
+			<!--<div class="proimgs">
+				<a href="#"><img src="img/index33.jpg"/></a>
+			</div>
+			<div class="item-title">
+				<span class="s1">东革阿里 马亚西亚原始森林 5A级原片</span>
+				<span class="s2">积分价:</span>
+				<span class="s3">549</span>
+				<span class="s4">起</span>
+			</div>
+			<div class="proimgs">
+				<a href="#"><img src="img/index4.jpg"/></a>
+			</div>
+			<div class="item-title">
+				<span class="s1">东革阿里 马亚西亚原始森林 5A级原片</span>
+				<span class="s2">积分价:</span>
+				<span class="s3">549</span>
+				<span class="s4">起</span>
+			</div>-->
+		</div>
+		<div class="fh-top">
+			<span class="iconfont icon-fanhuidingbu">
+			</span>
+		</div>
+		<script type="text/javascript">
+			document.addEventListener("DOMContentLoaded",function(){
+				var mySwiper = new Swiper ('.swiper-container', {
+				    autoplay: 3000,
+				    loop: true,
+				    autoplayDisableOnInteraction : false,
+				    // 如果需要分页器
+				    pagination: '.swiper-pagination',
+				  });  
+			});
+		</script>
+	</body>
+</html>
